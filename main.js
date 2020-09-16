@@ -26,7 +26,7 @@ client.on('message', (message) => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'random') {
-  	client.commands.get('random').execute(message, args);
+		client.commands.get('random').execute(message, args);
 	}
 });
 

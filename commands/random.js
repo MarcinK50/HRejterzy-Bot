@@ -8,8 +8,8 @@ module.exports = {
 		const rawdata1 = fs.readFileSync('quotes.json');
 		const rawdata = JSON.parse(rawdata1);
 		const number = Math.floor(Math.random() * 2);
-		var quote = rawdata[number].quote;
-		var episode = rawdata[number].episode;
+		const quote = rawdata[number].quote;
+		const episode = rawdata[number].episode;
 
 		const exampleEmbed = new Discord.MessageEmbed()
 			.setColor('#0099ff')
@@ -17,7 +17,7 @@ module.exports = {
 			.setURL('https://www.codetwo.pl/praca/o-hr-wiemy-wszystko')
 			.addFields(
 				{ name: 'Cytat:', value:`${quote}` },
-				{ name: 'Odcinek:', value: `nic` },
+				{ name: 'Odcinek:', value: 'nic' },
 			)
 			.setTimestamp()
 			.setFooter('By MarcinK50#9775', 'https://github.com/MarcinK50');
