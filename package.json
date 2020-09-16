@@ -1,0 +1,14 @@
+{
+  "name": "hrejterzy-bot",
+  "version": "1.0.0",
+  "description": "A discord bot that sending a random quotes from HRejterzy youtube channel",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "author": "Marcin \"MarcinK50\" Kowalicki",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
