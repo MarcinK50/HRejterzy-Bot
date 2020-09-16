@@ -6,5 +6,17 @@
 	{
 		"quote": "Twój kod to jakieś gówno!",
 		"episode": "Gdy programista pójdzie do wróżbity."
-	}
+	},
+	{
+		"quote": "A to gówno to co to za gówno?",
+		"episode": "Szef furiat nie wytrzymał podczas prezentacji programistów"
+	},
+	{
+		"quote": "To jest wszystko pod NDA. Mógłbym powiedzieć ci, ale musiałbym cię zabić.",
+		"episode": "Programista 30k"
+	},
+	{
+		"quote": "Hello. My name is Rajesh and I'm here to help you with all of your issues.",
+		"episode": "Każdy telefon do pomocy technicznej..."
+	},
 ]
