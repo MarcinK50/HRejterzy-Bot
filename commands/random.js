@@ -1,3 +1,7 @@
+/*
+	By Marcin "MarcinK50" Kowalicki
+	on license GNU(Generalnie Najebany Użytkownik)
+*/
 module.exports = {
 	name: 'random',
 	description: 'Send a random quote',
@@ -5,11 +9,11 @@ module.exports = {
 		const fs = require('fs');
 		const Discord = require('discord.js');
 
-		const rawdata1 = fs.readFileSync('quotes.json');
-		const rawdata = JSON.parse(rawdata1);
-		const number = Math.floor(Math.random() * 4);
-		var quote = rawdata[number].quote;
-		var episode = rawdata[number].episode;
+		const rawData = fs.readFileSync('quotes.json'); // Import JSON with quotes
+		const parsedData = JSON.parse(rawData); // Parse data from JSON
+		const random = Math.floor(Math.random() * 4); // Generate random number
+		const quote = parsedData[random].quote; 
+		const episode = parsedData[random].episode;
 
 		const exampleEmbed = new Discord.MessageEmbed()
 			.setColor('#0099ff')
@@ -22,6 +26,6 @@ module.exports = {
 			.setTimestamp()
 			.setFooter('By MarcinK50#9775', 'https://github.com/MarcinK50');
 
-		message.channel.send(exampleEmbed);
+		message.channel.send(exampleEmbed); // Send embed
 	},
 };
