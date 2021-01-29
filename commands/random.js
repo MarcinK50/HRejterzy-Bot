@@ -11,7 +11,7 @@ module.exports = {
 
 		const rawData = fs.readFileSync('quotes.json'); // Import JSON with quotes
 		const parsedData = JSON.parse(rawData); // Parse data from JSON
-		const random = Math.floor(Math.random() * 5); // Generate random number
+		const random = Math.floor(Math.random() * 6); // Generate random number
 		const quote = parsedData[random].quote; 
 		const episode = parsedData[random].episode;
 
